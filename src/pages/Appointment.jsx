@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import Hero from "../components/Hero";
+import AppointmentForm from "../components/AppointmentForm";
 
-export default function Appointment() {
+const Appointment = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Hero
+        title={"Schedule Your Appointment | ZeeCare Medical Institute"}
+        imageUrl={"/signin.png"}
+      />
+      <AppointmentForm/>
+    </>
+  );
+};
+
+export default Appointment;
